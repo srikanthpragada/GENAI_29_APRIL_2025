@@ -2,7 +2,7 @@
 import streamlit as st
 
 st.title("Demo")
-name = st.text_input("Enter your name", "" )
+name = st.text_input("Enter your name", "" )  # textbox
 if len(name) > 0:
     st.write(f"Hello {name}, Welcome to the Streamlit App!")
      
