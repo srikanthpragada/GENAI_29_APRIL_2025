@@ -5,7 +5,6 @@ import keys
 model_id = "mistralai/Mistral-7B-Instruct-v0.3"   
 client = InferenceClient(model=model_id, token= keys.HUGGINGFACE_KEY, provider="hf-inference")
 
-
 template_en_to_hi = """Translate the following English text to simple Hindi:
 
 {text}

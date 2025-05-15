@@ -13,6 +13,7 @@ requests
 faiss-cpu
 langchain-ollama 
 langchain-google-genai
+langchain-openai
 streamlit
 
 
