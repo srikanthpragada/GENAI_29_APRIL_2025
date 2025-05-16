@@ -44,7 +44,7 @@ matching_docs_str = "\n".join([doc.page_content for doc in results])
 final_prompt = prompt.format(context=matching_docs_str, question=question)
 
 repo_id = "mistralai/Mistral-7B-Instruct-v0.3"
-llm = InferenceClient(repo_id, token=keys.HUGGINGFACEKEY, timeout=120)
+llm = InferenceClient(repo_id, provider="hf-inference", token=keys.HUGGINGFACEKEY, timeout=120)
  
 result =  llm.text_generation(final_prompt)
 print(result)
